@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            padding-top: 250px;
+        }
+        h1{
+            color: rgb(230, 41, 164);
+        }
+        #btn
+        {
+            padding-top: 10px;
+            padding-left: 30px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            border-radius: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button:hover{
+            background-color: cadetblue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>To See the Magic</h1>
+        <button type="submit" id="btn">Click Here</button>
+    </center>
+</body>
+<script>
+    const button=document.querySelector("button");
+const body=document.querySelector("body");
+const color=["violet","indigo","yellow","red","blue","green","pink","purple","orange","black","cyan"];
+body.style.backgroundColor="silver";
+document.querySelector("button").addEventListener("click",function(){
+    const colorIndex=parseInt(Math.random()*color.length);
+    body.style.backgroundColor=color[colorIndex];
+});
+</script>
+</script>
+</html>
